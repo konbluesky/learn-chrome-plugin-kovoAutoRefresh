@@ -1,0 +1,30 @@
+﻿{
+	"manifest_version" : 2,
+	"name" : "网推工具",
+	"version" : "0.0.1",
+	"description" : "KVOV发贴",
+	"browser_action" : {
+		"default_icon" : "icon.png",
+        "default_title": "网推工具",
+        "default_popup": "popup.html" 
+	},
+	"permissions": [
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "notifications"
+    ],
+    "background": {  
+        "scripts": ["js/background.js"]
+      },
+	"content_scripts" : [
+		{
+			"matches": ["http://*.kvov.com/*"],
+			"js" : ["js/jquery.min.js", "js/kvov.js"]            
+        }
+	],
+    "web_accessible_resources": ["js/kvov.js"],
+	"icons" : {
+		"128" : "icon.png"
+	}
+}
