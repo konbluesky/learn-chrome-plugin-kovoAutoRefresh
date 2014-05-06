@@ -3,18 +3,29 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
 	<!--link rel="stylesheet" type="text/css"  href="css/css.css"/-->
-	<link rel="stylesheet" type="text/css"  href="css/bootstrap-cerulean.css"/>
-	<link rel="stylesheet" type="text/css"  href="css/charisma-app.css"/>
-	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css"  href="css/bootstrap.min.css"/>
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
     <script src="js/popup.js"></script>
+	<style type="text/css" media="screen">
+	.bs-example {
+	margin-left: 0;
+	margin-right: 0;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-radius: 4px 4px 0 0;
+	box-shadow: none;
+	}
+	</style>
 </head>
 <body>
-<div class="box-content buttons" style="height:200px;width:200px;">
-	<label class="control-label" style="font-size: 14px;float: left;margin: 5px 5px 5px 0px;">KVOV网:</label>
-	<p class="btn-group">
-		<button class="btn" id="kvovRefresh">重发</button>
-		<button class="btn" id="kvovOnepost">一键发布</button>
-	</p>
+<div class="bs-example" style="height:200px;width:200px;">
+	<div>
+	<label class="control-label" style="font-size: 14px;margin:10px;">KVOV网:</label>
+	<button class="btn btn-primary btn-xs" id="kvovRefresh">重发</button>
+	<button class="btn btn-success btn-xs" id="kvovOnepost">一键发布</button>	
+	</div>
 </div>
 </body>
 </html>
